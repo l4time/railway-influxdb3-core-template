@@ -3,6 +3,8 @@
 | Field | Value |
 |---|---|
 | Display name | `InfluxDB 3 Core` |
+| Public template code | `influxdb-3-core` |
+| Public deploy URL | `https://railway.com/deploy/influxdb-3-core` |
 | Upstream | `influxdata/influxdb` |
 | Version | `3.10.0` |
 | Services | One application service |

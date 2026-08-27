@@ -4,6 +4,8 @@ A single-service Railway package for InfluxDB 3 Core v3.10.0 with persistent sto
 
 This is an independent community template. It is not endorsed by InfluxData.
 
+[![Deploy InfluxDB 3 Core](https://railway.com/button.svg)](https://railway.com/deploy/influxdb-3-core)
+
 ## Architecture
 
 | Component | Purpose |
@@ -15,6 +17,8 @@ This is an independent community template. It is not endorsed by InfluxData.
 The container starts briefly as root only to validate `/data`, safely create or validate the internal token, and set exact ownership. It permanently drops to UID/GID `1500:1500` before starting InfluxDB and the adapter. The exact upstream OCI index is pinned in `Dockerfile`.
 
 ## Deploy from the Railway template
+
+Use the canonical [InfluxDB 3 Core template](https://railway.com/deploy/influxdb-3-core).
 
 The template creates one service and one volume mounted at `/data`. It sets:
 

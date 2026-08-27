@@ -1,8 +1,8 @@
 # Build report
 
-Status: **PASS — ready for independent product-kit QA**
+Status: **PASS — published route reconciled; ready for independent route QA**
 
-Built and checked: 2026-08-26.
+Built and checked: 2026-08-27.
 
 ## Runtime identity
 
@@ -17,13 +17,15 @@ Built and checked: 2026-08-26.
 
 - `sha256sum -c SOURCE_SHA256SUMS`: PASS
 - `python3 tests/claim_check.py`: PASS
+- Canonical public route:
+  `https://railway.com/deploy/influxdb-3-core`
 - Two independent `--pull --no-cache --provenance=false` builds: PASS
 - Independent image IDs differed, as exporter metadata can, while both canonical
   rootfs digests equaled the R5 value: PASS
 - Owned test containers, tags, and temporary digest files removed: PASS
 - Stable content inventory excluding this report and its checksum manifest:
   36 files, framed SHA-256
-  `65602b7c2a2cfcbe62e25522fb3512054cab467fd8a0c4b9caecea8b2bdc7738`
+  `3fc9acbde3d84eb27c9edb65e1687cd57420f359ac11d20ba858289dbf26fee2`
 
 `PACKAGE_SHA256SUMS` covers every public package file except itself. The static
 checker verifies the exact inventory, R5 source hashes, Railway configuration,

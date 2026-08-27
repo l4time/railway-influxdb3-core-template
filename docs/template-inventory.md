@@ -2,6 +2,7 @@
 
 | Field | Answer |
 |---|---|
+| Public template | `influxdb-3-core` at `https://railway.com/deploy/influxdb-3-core` |
 | Source type | Official public Docker image plus local wrapper |
 | Source | `influxdb:3.10.0-core` at immutable OCI index |
 | Railway services | One application service |
