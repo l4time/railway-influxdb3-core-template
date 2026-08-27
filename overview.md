@@ -30,6 +30,8 @@ backup/restore and version migration remain operator procedures.
 
 ## Dependencies for
 
+### Deployment Dependencies
+
 - One InfluxDB 3 Core service.
 - One persistent volume mounted at `/data`.
 - One generated `INFLUXDB3_EXTERNAL_BEARER_TOKEN`.
