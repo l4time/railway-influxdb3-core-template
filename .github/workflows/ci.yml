@@ -1,0 +1,24 @@
+name: Package checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 tests/static_check.py
+      - run: python3 tests/claim_check.py
+      - run: sha256sum -c SOURCE_SHA256SUMS
+      - run: sha256sum -c PACKAGE_SHA256SUMS
+      - run: docker build --pull --no-cache --provenance=false -t influxdb3-core-template:test .
