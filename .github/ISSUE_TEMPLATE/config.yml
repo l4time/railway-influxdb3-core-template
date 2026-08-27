@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/l4time/railway-influxdb3-core-template/security/advisories/new
+    about: Report wrapper vulnerabilities privately. Never post secrets publicly.
+  - name: Upstream InfluxDB
+    url: https://github.com/influxdata/influxdb/issues
+    about: Report database behavior that reproduces without this Railway wrapper.
+  - name: Railway support
+    url: https://station.railway.com/
+    about: Use Railway support for account, billing, quota, region, and platform incidents.
