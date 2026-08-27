@@ -23,7 +23,7 @@ Built and checked: 2026-08-26.
 - Owned test containers, tags, and temporary digest files removed: PASS
 - Stable content inventory excluding this report and its checksum manifest:
   36 files, framed SHA-256
-  `7aaf326cf1769ff6418b1fd680a5c6e7461f8b0d283a2e472de225fb7fb26516`
+  `25d05fe735c89be3fba45c693c06fbe8d8b24362017a29e7b57c249b084b2385`
 
 `PACKAGE_SHA256SUMS` covers every public package file except itself. The static
 checker verifies the exact inventory, R5 source hashes, Railway configuration,
