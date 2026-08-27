@@ -1,0 +1,69 @@
+name: Template bug
+description: Report a reproducible problem in the InfluxDB 3 Core Railway package
+title: "[Template bug]: "
+labels:
+  - template bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remove tokens, variable values, request headers, database data, backups, project IDs, and private domains before submitting.
+  - type: input
+    id: package
+    attributes:
+      label: Template package version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: upstream
+    attributes:
+      label: InfluxDB version
+      placeholder: "3.10.0"
+    validations:
+      required: true
+  - type: input
+    id: deployed
+    attributes:
+      label: Deploy date and Railway region
+    validations:
+      required: true
+  - type: textarea
+    id: services
+    attributes:
+      label: Railway service and volume shape
+      description: List service count, replica count, volume mount path, and whether Serverless is disabled. Do not include IDs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      description: Remove bearer tokens, environment dumps, request headers, data, paths containing secrets, and account/project identifiers.
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed all secrets, tokens, private data, and account identifiers.
+          required: true
+        - label: I checked whether this is an upstream InfluxDB issue.
+          required: true
